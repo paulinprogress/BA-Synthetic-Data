@@ -1,9 +1,11 @@
-Bachelorarbeit im Studiengang Medientechnik an der [HAW Hamburg](https://www.haw-hamburg.de/)
-# Contrastive Learning mit Stable Diffusion-basierter Datenaugmentation: Verbesserung der Bildklassifikation durch synthetische Daten
+Bachelor's thesis for B.Sc. Media Technology at [HAW Hamburg](https://www.haw-hamburg.de/)
+# Contrastive Learning with Stable Diffusion-based Data Augmentation: Improving Image Classification with Synthetic Data
 
-Es wurde ein [Supervised Contrastive Learning](https://arxiv.org/abs/2004.11362)-Klassifikator trainiert, der synthetische Daten verwendet, welche zuvor mit [DA-Fusion](https://arxiv.org/abs/2302.07944) generiert wurden. DA-Fusion ist eine Methode zur Stable Diffusion-basierten Datenaugmentation, welche semantisch sinnvolle Variationen von Bildern generieren kann.
+A [Supervised Contrastive Learning](https://arxiv.org/abs/2004.11362) classifier was trained using synthetic data generated with [DA-Fusion](https://arxiv.org/abs/2302.07944) - a Stable Diffusion-based data augmentation method that can generate semantically meaningful variations of images.
 
-Mit DA-Fusion wurden sowohl In-Distribution- also auch (Near) Out-of-Distribution-Daten generiert, indem die Stärke der Augmentation unterschiedlich eingestellt wurde. Die OOD-Daten sollten dabei nur als negativ-Beispiele im Contrastive Learning dienen, um die Repräsentationen der ID-Daten weiter zu verbessern. Die Experimente der Arbeit zeigten, dass die synthetischen ID-Daten zu einer Verbesserung der Klassifikation beitragen, die OOD-Daten jedoch nicht.
+DA-Fusion was used to generate both in-distribution and (near) out-of-distribution (OOD) data by adjusting the augmentation strength. The OOD data only serve as negative examples for contrastive learning, with the goal of further improving the representations of the ID data.
+
+The experiments showed that synthetic ID data improved classification, but OOD data did not.
 
 ## Installation
 
@@ -16,16 +18,16 @@ pip install --upgrade huggingface_hub
 huggingface-cli login
 ```
 
-(Conda-Channels: `nvidia`, `pytorch`, `conda-forge`)
+(Conda channels: `nvidia`, `pytorch`, `conda-forge`)
 
-## Verwendung
+## Usage
 
-Vollständige Pipelines für den [MVIP](https://fordatis.fraunhofer.de/handle/fordatis/358)-Datensatz:
+Complete pipeline for the [MVIP dataset](https://fordatis.fraunhofer.de/handle/fordatis/358):
 
-- `mvip_generate.augs.sh` zur Generierung synthetischer ID- & OOD-Augmentationen
-- `mvip_run_experiments.sh` zum Ausführen drei unterschiedlicher Trainingsdurchläufe mit Supervised Contrastive Learning, um den Einfluss der Augmentationen auf die Klassifikation zu untersuchen
+- `mvip_generate.augs.sh` for generating synthetic ID & OOD augmentations
+- `mvip_run_experiments.sh` for executing the three different training runs with Supervised Contrastive Learning, examining the impact of the augmentations on classification performance
 
-Die Ausführlichen READMEs zu den beiden verwendeten Methoden:
+You can find the more detailed READMEs (modified for this project) here:
 
 - [DA-Fusion](da_fusion/README.md)
 - [Supervised Contrastive Learning](sup_contrast/README.md)
