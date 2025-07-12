@@ -1,4 +1,4 @@
-[Zurück](https://github.com/PaulToast/Bachelorarbeit-Synthetische-Daten)
+[Back](https://github.com/PaulToast/Bachelorarbeit-Synthetische-Daten)
 # SupContrast: Supervised Contrastive Learning
 
 [Original Repository](https://github.com/HobbitLong/SupContrast) | [Paper](https://arxiv.org/abs/2004.11362)

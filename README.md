@@ -1,4 +1,4 @@
-Bachelor's thesis for B.Sc. Media Technology at [HAW Hamburg](https://www.haw-hamburg.de/)
+Bachelor's thesis for B.Sc. in Media Technology at [HAW Hamburg](https://www.haw-hamburg.de/)
 # Contrastive Learning with Stable Diffusion-based Data Augmentation: Improving Image Classification with Synthetic Data
 
 A [Supervised Contrastive Learning](https://arxiv.org/abs/2004.11362) classifier was trained using synthetic data generated with [DA-Fusion](https://arxiv.org/abs/2302.07944) - a Stable Diffusion-based data augmentation method that can generate semantically meaningful variations of images.

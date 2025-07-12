@@ -1,4 +1,4 @@
-[Zurück](https://github.com/PaulToast/Bachelorarbeit-Synthetische-Daten)
+[Back](https://github.com/PaulToast/Bachelorarbeit-Synthetische-Daten)
 # Effective Data Augmentation With Diffusion Models
 
 [Original Repository](https://github.com/brandontrabucco/da-fusion) | [Website](btrabuc.co/da-fusion) | [Paper](https://openreview.net/forum?id=ZWzUA9zeAg)
